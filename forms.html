@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>forms</title>
+    <!--og-->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+
+    <!--styles-->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body class="">
+
+<!--<header class="">-->
+<div class="header_top d-none d-lg-block">
+    <div class="container-fluid">
+        <nav class="navbar">
+            <a class="navbar-brand" href="home.html"><img src="media/logo_vodarenska_svitavy.png" height="70px" alt="logo"></a>
+            <form class="form-inline d-none d-md-block">
+                <input class="input_search form-control mr-sm-2" type="search" placeholder="Hledat" aria-label="Search">
+                <button class="btn_search my-2 my-sm-0" type="submit"></button>
+            </form>
+        </nav>
+    </div>
+</div>
+<div class="header_bottom sticky-top">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-lg-none" href="home.html"><img src="media/logo_vodarenska_svitavy.png" height="40px" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">O společnosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Aktuality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supply-and-demand.html">Nabídka / Poptávka</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="for-customers.html" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pro zákazníky
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Ceník vodného a stočného</a>
+                            <a class="dropdown-item" href="#">Ceník služeb</a>
+                            <a class="dropdown-item" href="#">Kanalizační řád</a>
+                            <a class="dropdown-item" href="#">Reklamační řád</a>
+                            <a class="dropdown-item" href="#">Všeobecné obchodní podmínky</a>
+                            <a class="dropdown-item" href="#">Výpočet množství srážkových vod</a>
+                            <a class="dropdown-item" href="#">Přihláška k odběru vody a odvádění odpadních vod</a>
+                            <a class="dropdown-item" href="#">Odhlášení odběru přihlášení odběru (při změně)</a>
+                            <a class="dropdown-item" href="#">Objednávka montážních prací přípojek</a>
+                            <a class="dropdown-item" href="#">Žádost o přezkoušení vodoměru</a>
+                            <a class="dropdown-item" href="#">Žádost o vyjádření</a>
+                            <a class="dropdown-item" href="#">Žádost o změny</a>
+                            <a class="dropdown-item" href="#">Podružný vodoměr na zahradu</a>
+                            <a class="dropdown-item" href="#">Pohotovost</a>
+                            <a class="dropdown-item" href="#">Formulář ke stažení</a>
+                            <a class="dropdown-item" href="#">Kvalita vody</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdownMenuLinkKontakt"
+                           role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kontakt
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkKontakt">
+                            <a class="dropdown-item" href="contact_residence.html">Sídlo společnosti</a>
+                            <a class="dropdown-item" href="contact_customer-centre.html">Zákaznické centrum</a>
+                            <a class="dropdown-item" href="contact_management.html">Management společnosti</a>
+                            <a class="dropdown-item" href="contact_invoicing.html">Fakturace</a>
+                            <a class="dropdown-item" href="#">Žádost o vyjádření k sítím</a>
+                            <a class="dropdown-item" href="#">Telefonní čísla</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--</header>-->
+
+<!--CONTENT-->
+<div class="main-content">
+
+    <!--heading colored-->
+    <section class="heading-colored bg-colored">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Formulář</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Form-->
+    <section class="space">
+        <p class="h2 text-center mb-5">Form</p>
+        <div class="container container-700 m-auto">
+
+            <form id="ajax-form" class="needs-validation form-wrapper" novalidate>
+                <div class="form-row">
+                    <div class="col-12 col-sm-6 col-md-6 mb-4">
+                        <label for="validationCustom01">First name</label>
+                        <input type="text" name="name" class="form-control" id="validationCustom01"
+                               placeholder="First name"
+                               value="John" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 mb-4">
+                        <label for="validationCustom02">Last name</label>
+                        <input type="text" name="surname" class="form-control" id="validationCustom02"
+                               placeholder="Last name"
+                               value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-4">
+                        <label for="validationCustomUsername">Email</label>
+                        <input type="email" name="email" class="form-control" id="validationCustomUsername"
+                               placeholder="@" aria-describedby="inputGroupPrepend" value="2@2.hu" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <label for="validationCustom03">Date of birth</label>
+                        <input type="date" name="date" class="form-control" id="validationCustom03">
+                        <div class="invalid-feedback">
+                            Please provide a valid date.
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <label for="validationCustom05">Zip</label>
+                        <input type="number" name="children" class="form-control" id="validationCustom05"
+                               placeholder="Number">
+                        <div class="invalid-feedback">
+                            Please enter the number.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-4">
+                        <label for="validationTextarea">Textarea</label>
+                        <textarea class="form-control" id="validationTextarea"
+                                  placeholder="Required example textarea" rows="4" required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-4">
+                        <label>Gender</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                   name="gender" required>
+                            <label class="custom-control-label" for="customControlValidation2">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-4">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                   name="gender" required>
+                            <label class="custom-control-label" for="customControlValidation3">Female</label>
+                            <div class="invalid-feedback">
+                                Please select from the options.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12 mb-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_full d-block mx-auto" type="submit">Submit form</button>
+            </form>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+
+                })();
+            </script>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-xl-3 footer-padding">
+                    <a class="img-fluid">
+                        <img src="media/logo_vodarenska_svitavy.png" height="50px" alt="logo">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 footer-padding">
+                    <p>Vodárenská Svitavy s.r.o.</p>
+                    <p>Hradec nad Svitavou 494</p>
+                    <p>569 01 Hradec nad Svitavou</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 footer-padding">
+                    <p>hlášení poruch (7:00 - 15:00 hod): <br><a href="tel:461 548 273"> 461 548 273</a></p>
+                    <p>hlášení poruch po pracovní době: <br><a href="tel:734 353 979"> 734 353 979</a></p>
+                    <p>zákaznická linka: <br><a href="tel:461 311 600"> 461 311 600</a></p>
+                    <p>čistírna odpadních vod: <br><a href="tel:461 548 273"> 461 548 273</a></p>
+                </div>
+                <div class="col-12 col-md-12 col-xl-3 footer-padding">
+                    <p>Email: <a
+                            href="mailto:vodarenskasvitavy@vodarenskasvitavy.cz">vodarenskasvitavy@vodarenskasvitavy.cz</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top">
+            <div class="d-flex justify-content-center footer-copyright">
+                <p>Copyright © 2020 | Vodárenská Svitavy s.r.o.</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--END CONTENT-->
+
+<!-- JavaScript and dependencies -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
